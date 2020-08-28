@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatchMe</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body onload = "myFunction()">
+    <div id="judul">
+        <h1>CatchMe</h1>
+    </div>
+
+    <div id="petunjuk">
+        <h4>Petunjuk</h4>
+        <p>Tangkap button dengan cara klik button tersebut. Tombol akan berpindah-pindah secara random dengan kecepatan berdasarkan LV (level) anda. Ketika berhasil klik tombol maka LV (level) akan naik dan akan berpindah lebih cepat. Jumlah LV sampai sepuluh.</p>
+        
+    </div>
+
+    <div id="difficulties">
+        <button id="easy" disabled>Easy</button>
+        <button id="hard">Hard</button>
+    </div>
+
+    <div id="level">
+        <p>LV -- </p>
+        <p id="score">1</p>
+    </div>
+
+    <div id="hasilnama"></div>
+
+    <div id="area">
+        <button id="tombol1">Start</button>
+    </div>
+
+    <div id="tombol2">
+        <button id="surrender" disabled>Surender</button>
+    </div>
+
+    <!-- The Modal finish-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 id="keterangan">Yaah Belum Berhasil</h2>
+        </div>
+        <div class="modal-body">
+            <p>Kamu Sampai di Level : </p>
+            <p id="tampilan-level">1</p>
+            <button id="tombolreset">Main Lagi!!!</button>
+        </div>
+        <div class="modal-footer">
+            <h3>********************</h3>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- The Modal login -->
+    <div id="myModal1" class="modal1">
+
+        <!-- Modal content -->
+        <div class="modal1-content">
+        <div class="modal1-header">
+            <h2 id="keterangan">Ayo Masukan Nama dan Email</h2>
+        </div>
+        <div class="modal1-body">
+            <div>
+                <form>
+                    <label for="nama">Name:</label><br>
+                    <input type="text" id="nama" name="nama" value="Guest"><br>
+                </form><br><br>
+                  <button onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="modal1-footer">
+            <h3>********************</h3>
+        </div>
+        </div>
+    
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
