@@ -100,7 +100,7 @@ span.onclick = function() {
     btn.style.top = "47%";
     document.getElementById("surrender").disabled = true;
     document.getElementById("score").innerHTML = level;
-
+    console.log(difficulties)
 }
 
 //reset button
@@ -112,7 +112,6 @@ document.getElementById("tombolreset").onclick = function() {
     if(difficulties === 2) {
         interval = 2000
     }
-    console.log(difficulties)
     level = 1;
     flag = true;
     flag1 = true;
@@ -121,7 +120,7 @@ document.getElementById("tombolreset").onclick = function() {
     btn.style.top = "47%";
     document.getElementById("surrender").disabled = true;
     document.getElementById("score").innerHTML = level;
-
+    console.log(difficulties)
 };
 
 //for login
