@@ -104,6 +104,7 @@ document.getElementById("tombolreset").onclick = function() {
     modal.style.display = "none" 
     if(difficulties === 1) interval = 2500
     if(difficulties === 2) interval = 2000
+    console.log(difficulties)
     level = 1;
     flag = true;
     flag1 = true;
