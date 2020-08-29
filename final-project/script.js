@@ -100,7 +100,7 @@ span.onclick = function() {
     btn.style.top = "47%";
     document.getElementById("surrender").disabled = true;
     document.getElementById("score").innerHTML = level;
-    console.log(difficulties)
+    //console.log(difficulties)
 }
 
 //reset button
