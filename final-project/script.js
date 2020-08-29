@@ -24,7 +24,7 @@ document.getElementById("easy").onclick = function() {
     document.getElementById("hard").disabled = false 
 };
 document.getElementById("hard").onclick = function() {
-    difficulties = 1
+    difficulties = 2
     interval = 2000
     document.getElementById("easy").disabled = false 
     document.getElementById("hard").disabled = true 
@@ -55,7 +55,7 @@ function naikLevel (){
         clearInterval(timer);
         flag1 = false
         document.getElementById("keterangan").innerHTML = "Selamat Kamu Berhasil!!!";
-        document.getElementById("tampilan-level").innerHTML = 10;
+        document.getElementById("tampilan-level").innerHTML = "FINISH";
         modal.style.display = "block";
     }
     btn.style.top = Math.floor((Math.random() * 85) + 1) + "%";
@@ -86,8 +86,8 @@ function timerRandom() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-    if(difficulties = 1) interval = 2500
-    if(difficulties = 2) interval = 2000
+    if(difficulties === 1) interval = 2500
+    if(difficulties === 2) interval = 2000
     level = 1;
     flag = true;
     flag1 = true;
